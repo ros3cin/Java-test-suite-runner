@@ -6,7 +6,7 @@ import cin.ufpe.br.desktop_benchmarks.api.IBenchmark;
 
 public class JodaTimeBenchmark implements IBenchmark {
 	private final String pomPath = "/home/renato/Documents/Mestrado/desktop-bench/joda-time/pom.xml";
-	private final String lineArgs = "test";
+	private final String lineArgs = "surefire:test -DdisableXmlReport=true";
 	private String commandLine;
 	private int warmUpIterationsN = 1;
 	private int runIterationsN = 1;

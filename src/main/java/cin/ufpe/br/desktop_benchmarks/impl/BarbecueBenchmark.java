@@ -11,7 +11,7 @@ import cin.ufpe.br.desktop_benchmarks.api.IBenchmark;
 
 public class BarbecueBenchmark implements IBenchmark {
 	private final String pomPath = "/home/renato/Documents/Mestrado/desktop-bench/barbecue-code/pom.xml";
-	private final String lineArgs = "test";
+	private final String lineArgs = "surefire:test -DdisableXmlReport=true";
 	private String commandLine;
 	private int warmUpIterationsN = 1;
 	private int runIterationsN = 1;
