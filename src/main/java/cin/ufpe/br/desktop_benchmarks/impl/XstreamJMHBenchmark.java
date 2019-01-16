@@ -20,7 +20,7 @@ public class XstreamJMHBenchmark implements IBenchmark {
 	
 	@Override
 	public void warmup() throws IOException, InterruptedException {
-		for(int i = 0; i < 1000; i++){
+		for(int i = 0; i < 1; i++){
             xstream.toXML(classOne);
             xstream.fromXML(classOneXmlString);
         }
@@ -28,7 +28,7 @@ public class XstreamJMHBenchmark implements IBenchmark {
 
 	@Override
 	public void run() throws IOException, InterruptedException {
-		for(int i = 0; i < 10000; i++){
+		for(int i = 0; i < 10; i++){
             xstream.toXML(classOne);
             xstream.fromXML(classOneXmlString);
         }
@@ -43,13 +43,13 @@ public class XstreamJMHBenchmark implements IBenchmark {
         classOne.setField5(5L);
 
         List<String> field6 = new ArrayList<String>();
-        for(int i = 0; i < 100; i++) {
+        for(int i = 0; i < 2500; i++) {
             field6.add(String.valueOf(i));
         }
         classOne.setField6(field6);
 
         List<Integer> field7 = new ArrayList<Integer>();
-        for(int i = 0; i < 100; i++) {
+        for(int i = 0; i < 2500; i++) {
             field7.add(i);
         }
         classOne.setField7(field7);

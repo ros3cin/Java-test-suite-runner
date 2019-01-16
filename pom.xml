@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>cin</groupId>
 			<artifactId>xstream</artifactId>
-			<version>dell-rec-50k</version>
+			<version>original</version>
 		</dependency>
 		
 		<dependency>
